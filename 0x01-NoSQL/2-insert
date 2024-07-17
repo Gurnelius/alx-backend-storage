@@ -1,0 +1,2 @@
+#!/bin/bash
+echo 'db.school.insertOne({ name: "Holberton school" })' | mongo $1

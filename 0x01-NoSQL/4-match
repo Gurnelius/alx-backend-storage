@@ -1,0 +1,2 @@
+#!/bin/bash
+echo 'db.school.find({ name: "Holberton school" }).pretty()' | mongo $1

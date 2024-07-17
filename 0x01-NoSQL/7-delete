@@ -1,0 +1,2 @@
+#!/bin/bash
+echo 'db.school.deleteMany({ name: "Holberton school" })' | mongo $1

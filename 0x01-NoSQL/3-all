@@ -1,0 +1,2 @@
+#!/bin/bash
+echo 'db.school.find().pretty()' | mongo $1
