@@ -1,2 +1,2 @@
-#!/bin/bash
-echo 'db.school.insertOne({ name: "Holberton school" })' | mongo $1
+// Insert a new document in the collection school
+db.school.insertOne({ name: "Holberton school" })
