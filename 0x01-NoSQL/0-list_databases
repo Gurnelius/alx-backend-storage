@@ -1,2 +1,2 @@
 // list all databases
-echo "show dbs" | mongo
+show databases
