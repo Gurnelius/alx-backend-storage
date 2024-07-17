@@ -1,2 +1,2 @@
-#!/bin/bash
-echo 'db.school.find({ name: "Holberton school" }).pretty()' | mongo $1
+// Find all documents with name: "Holberton school"
+db.school.find({ name: "Holberton school" })

@@ -1,2 +1,2 @@
-#!/bin/bash
-echo 'db.school.countDocuments()' | mongo $1
+// Count the number of documents in the collection
+db.school.countDocuments()

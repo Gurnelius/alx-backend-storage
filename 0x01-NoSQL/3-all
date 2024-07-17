@@ -1,2 +1,2 @@
-#!/bin/bash
-echo 'db.school.find().pretty()' | mongo $1
+// list all documents in collection
+db.school.find()
