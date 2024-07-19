@@ -11,6 +11,7 @@ from typing import Callable
 # Initialize the Redis client
 redis_client = redis.Redis()
 
+
 def count_requests(method: Callable) -> Callable:
     """Decorator for counting and caching requests"""
     @wraps(method)
@@ -31,15 +32,9 @@ def count_requests(method: Callable) -> Callable:
 
     return wrapper
 
+
 @count_requests
 def get_page(url: str) -> str:
     """Obtain the HTML content of a URL"""
     response = requests.get(url)
     return response.text
-
-# Example usage
-if __name__ == "__main__":
-    url = "http://slowwly.robertomurray.co.uk"
-    print(get_page(url))
-    print(get_page(url))
-    print(get_page(url))
