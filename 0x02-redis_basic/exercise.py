@@ -1,5 +1,16 @@
 #!/usr/bin/env python3
-""" Redis Module """
+"""
+Implement Redis Module
+
+This module contains the Cache class that stores and retrieves data
+from a Redis server.
+
+This module provides the following decorators:
+
+    - count_calls
+    - call_history
+    - replay
+"""
 
 import redis
 import requests
@@ -69,7 +80,7 @@ def replay(method: Callable) -> None:
 
 class Cache:
     """
-    Cache class.
+    Implement Cache class.
     """
     def __init__(self):
         """
